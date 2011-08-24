@@ -31,6 +31,7 @@ CREATE TABLE `sellers` (
   `img` varchar(1024) DEFAULT NULL,
   `order` int(11) DEFAULT NULL,
   `site` varchar(45) DEFAULT NULL,
+  `type` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -41,7 +42,7 @@ CREATE TABLE `sellers` (
 
 LOCK TABLES `sellers` WRITE;
 /*!40000 ALTER TABLE `sellers` DISABLE KEYS */;
-INSERT INTO `sellers` VALUES (1,'Tisa KUKU','tisa7.com','/public/img/taobao.png',1,'taobao'),(2,'King T-shirt','king.cc','/public/img/taobao.png',2,'taobao');
+INSERT INTO `sellers` VALUES (1,'Tisa KUKU','tisa7.com','/public/img/taobao.png',1,'taobao','T-shirt'),(2,'King T-shirt','king.cc','/public/img/taobao.png',2,'taobao','T-shirt');
 /*!40000 ALTER TABLE `sellers` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
