@@ -4,12 +4,3 @@ development:
   pool: 5
   timeout: 5000
 
-production:
-  adapter: mysql
-  encoding: utf8
-  database: charmbuy
-  pool: 5
-  username: root
-  password: 312821
-  host: localhost
-  port: 3306
