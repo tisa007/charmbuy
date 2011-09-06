@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  body: MyText
+  reply: MyText
+  is_visible: false
+  is_readed: false
+  is_replied: false
+  poster: 
+  replier: 
+
+two:
+  body: MyText
+  reply: MyText
+  is_visible: false
+  is_readed: false
+  is_replied: false
+  poster: 
+  replier: 

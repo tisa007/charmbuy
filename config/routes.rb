@@ -1,4 +1,12 @@
 Charmbuy::Application.routes.draw do
+  resources :messages
+
+  resources :users
+
+  resources :shops
+
+  resources :news
+
   get "home/index"
   root :to => 'home#index'
   

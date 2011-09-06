@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Body:</b>
+  <%= @message.body %>
+</p>
+
+<p>
+  <b>Reply:</b>
+  <%= @message.reply %>
+</p>
+
+<p>
+  <b>Is visible:</b>
+  <%= @message.is_visible %>
+</p>
+
+<p>
+  <b>Is readed:</b>
+  <%= @message.is_readed %>
+</p>
+
+<p>
+  <b>Is replied:</b>
+  <%= @message.is_replied %>
+</p>
+
+<p>
+  <b>Poster:</b>
+  <%= @message.poster %>
+</p>
+
+<p>
+  <b>Replier:</b>
+  <%= @message.replier %>
+</p>
+
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
