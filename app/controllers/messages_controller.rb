@@ -40,6 +40,8 @@ class MessagesController < ApplicationController
   # POST /messages
   # POST /messages.json
   def create
+    params[:message][:poster] = User.find(params[:message][:poster].to_i)
+    params[:message][:replier] = User.find(params[:message][:replier].to_i)
     @message = Message.new(params[:message])
 
     respond_to do |format|
